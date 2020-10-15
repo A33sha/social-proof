@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "body-font";
+    src: url("Spartan/static/Spartan-Regular.ttf");
+}
+@font-face{
+    font-family: "medium-font";
+    src: url("Spartan/static/Spartan-Medium.ttf");
+}
+@font-face{
+    font-family: "bold-font";
+    src: url("Spartan/static/Spartan-Bold.ttf");
+}
+body{
+    font-family: "body-font";
+    font-size: 15px;
+}
+.container{
+    margin: 30px 0px;
+}
+
+.main section{
+    margin: auto;
+}
+
+h1{
+    color:hsl(300, 43%, 22%);
+    font-family: "bold-font";
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 2.0em;
+}
+#main-sentence{
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    font-family: bold-font;
+    font-size: 13px;
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews section{
+    width: 350px;
+    text-align: justify;
+    margin: 30px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.buyer{
+    display: inline-block;
+    color: hsl(333, 80%, 67%);
+    margin: 8px 20px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.reviews section div {
+    color: hsl(300, 24%, 96%);
+    display: flex;
+    margin-bottom: 20px;
+    font-family: medium-font;
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        background: url("images/bg-pattern-top-desktop.svg")  0px -90px no-repeat,
+        url("images/bg-pattern-bottom-desktop.svg")  280px -20px no-repeat;
+    }
+    .main, .reviews{
+        display: flex;
+        margin: 80px 120px;
+    }
+    h1{
+        width: 250px;
+    }
+    #main-sentence{
+        width: 500px;
+        
+    }
+    #rating{
+        width: 600px;
+    }
+    .ratings{
+    
+        margin: 15px;
+        padding: 10px 50px 10px 20px;
+    }
+    
+    .one{
+        width: 400px;
+    }
+    .two{
+        margin-left: 50px;
+        width: 400px;
+    }
+    .three{
+        margin-left: 100px;
+        width: 400px;
+    }
+    span{
+        margin-left: 20px;
+    }
+    .second{
+        position: relative;
+        top: 20px;
+    }
+    .third{
+        position: relative;
+        top: 40px;
+    }
+}
+@media screen and (max-width: 1439px) and (min-width: 375px){
+    .container{
+        width: 600px;
+        margin: 30px auto;
+        padding: 20px 10px;
+        background: url(images/bg-pattern-top-mobile.svg) no-repeat top left,
+        url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+        background-size: 450px
+    }
+    .main, .reviews{
+        display: block;
+        margin: 50px auto;
+    }
+    .main section {
+        margin: 20px auto;
+        width: 300px;
+        text-align: center;
+    }
+    .ratings{
+        margin: 15px auto;
+        padding: 15px 10px;
+    }
+    .ratings span{
+        display: block;
+        margin-top: 10px;
+    }
+    .reviews section{
+        margin: 15px auto;
+    }
+}
