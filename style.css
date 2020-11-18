@@ -73,7 +73,7 @@ img{
     font-family: medium-font;
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1041px){
     body{
         background: url("images/bg-pattern-top-desktop.svg")  0px -90px no-repeat,
         url("images/bg-pattern-bottom-desktop.svg")  280px -20px no-repeat;
@@ -121,7 +121,7 @@ img{
         top: 40px;
     }
 }
-@media screen and (max-width: 1439px) and (min-width: 375px){
+@media screen and (max-width: 1040px) and (min-width: 375px){
     .container{
         width: 600px;
         margin: 30px auto;
